@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Merriweather:wght@300;400&display=swap');
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f3f3f3;
+}
+header {
+    background: #1e1e1e;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+nav {
+    background: #333;
+    padding: 10px;
+    text-align: center;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+.hero {
+    background: url("https://wallpaperaccess.com/full/13055172.jpg") no-repeat center/cover;
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    font-size: 40px;
+}
+.hero h2 {
+    margin-top: 350px;      /* pushes text downward */
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+}
+
+.section {
+    padding: 40px;
+    text-align: center;
+}
+.cars-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+.car-card {
+    background: white;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+.car-card:hover {
+    transform: translateY(-5px);
+}
+.car-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display:block;
+}
+.car-card h3 {
+    margin: 15px 0;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.car-card button {
+    display: block;
+    background: #ff6600;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1rem;
+    color: white;
+    margin: 0 auto 20px auto;  /* center button */
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+
+.car-card button:hover {
+    background: #cc5200;
+    transform: scale(1.05);
+}
+
+
+footer {
+    background: #1e1e1e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+.social {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    margin: 5px;
+    transition: 0.3s ease;
+}
+
+.social i {
+    font-size: 24px;
+    transition: 0.3s ease;
+}
+
+/* Hover effect */
+.social:hover {
+    color: #ff6600;       /* Change text color */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+.social:hover i {
+    color: #ff6600;       /* Icon color change */
+    transform: scale(1.2); /* Icon zoom */
+}
+/* POPUP BACKGROUND */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+/* POPUP BOX */
+.popup-content {
+    background: #fff;
+    width: 90%;
+    max-width: 400px;
+    padding: 25px;
+    border-radius: 15px;
+    animation: popupAnimation 0.3s ease;
+}
+
+/* Animation */
+@keyframes popupAnimation {
+    from { transform: scale(0.7); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+/* CLOSE BUTTON */
+.close {
+    float: right;
+    font-size: 28px;
+    cursor: pointer;
+    color: #333;
+}
+
+/* FORM INPUTS */
+.popup-content input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 15px;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+/* SUBMIT BUTTON */
+.submit-btn {
+    width: 100%;
+    background: #28a745;
+    color: white;
+    padding: 12px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background: #218838;
+}
+/* HERO SECTION */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+/* Heading */
+.hero h2 {
+    margin-bottom: 10px;   /* space below h2 */
+    font-size: 2rem;
+    font-weight: bold;
+    color: #faf4f4;        /* apply your preferred heading color */
+}
+
+/* Paragraph */
+.hero p {
+    margin-top: 0;
+    font-size: 1rem;
+    color: #ee5656;
+}
+
+/* Extra container styling if needed */
+.container {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+.hero {
+    text-align: center;
+    padding: 50px 20px;   /* pushes content upward */
+}
+
+.hero h2 {
+    margin-top: -350px;    /* fine adjustment upward */
+    margin-bottom: 10px;
+    margin-left: 40px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #30f109;
+    font-family: 'Racing Sans One', sans-serif;
+}
+.section {
+    padding: 60px 20px;
+    text-align: center;
+    background: #f9f9f9;
+}
+
+
+
+.section h3 {
+    font-family: 'Merriweather', serif;
+    font-size: 1.3rem;
+    line-height: 1.8;
+    color: #444;
+    margin: 0 auto;
+    max-width: 900px;
+    text-align: justify;
+}
+.hero h2 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #ffffff;
+    transition: 0.1s ease;
+    cursor: pointer;
+}
+
+/* Hover Effect */
+.hero h2:hover {
+    color: #00ff15;             /* Gold color on hover */
+    transform: scale(.05);    /* Slight zoom */
+    letter-spacing: 2px;       /* Smooth spacing */
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    background: #111;
+    padding: 15px 40px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.3s ease;
+    position: relative;
+}
+
+/* Hover color + underline animation */
+nav a:hover {
+    color: #ffcc00;
+}
+
+/* Underline animation */
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0%;
+    height: 2px;
+    background: #ffcc00;
+    transition: 0.3s ease;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+header h1 {
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+}
+
+header h1 span {
+    color: #f55477;     /* default color for “Naveen” */
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+header h1 span:hover {
+    color: #30f109;     /* hover color */
+}
+footer {
+    background: #111;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+footer .social {
+    display: inline-block;
+    margin: 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+footer .social:hover {
+    color: #ffcc00;
+}
+
+footer p {
+    margin-top: 15px;
+    font-size: 14px;
+}
+@media (max-width: 1200px) {
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 992px) {
+    nav {
+        gap: 15px;
+    }
+    .hero h2 {
+        font-size: 2.2rem;
+    }
+    .hero p {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .cars-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .car-card img {
+        height: 250px;
+    }
+    .car-card button {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+    nav a {
+        font-size: 16px;
+    }
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+    .hero p {
+        font-size: 1rem;
+    }
+    .car-card img {
+        height: 200px;
+    }
+    .car-card h3 {
+        font-size: 1.2rem;
+    }
+    .car-card button {
+        font-size: 0.85rem;
+        padding: 8px 15px;
+    }
+    .section h3 {
+        font-size: 1rem;
+    }
+}
